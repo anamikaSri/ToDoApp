@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="images\favicon-1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- font awasom -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+
+        <span class="navbar-brand h1  head"> <i
+                class="fas fa-tasks logo animate__animated animate__lightSpeedInRight"></i> <span
+                style="color: rgb(7, 7, 7);font-size: larger;">T</span>o <span
+                style="color: rgb(7, 7, 7); font-size: larger;">D</span>o <span
+                style="color: rgb(7, 7, 7); font-size: larger;">A</span>pp</span>
+    </nav>
+
+    <div class="card box mt-10">
+        <img class="card-img-top image" src="images\s-2.jpg" alt="Card image cap" style="height: 200px;">
+        <h1 class="heading mx-2" id="text">Tueday today</h1>
+        <h4 class="refreash" id="refresh-1"><i class="fas fa-sync-alt"></i></h4>
+        <h4 class="search" id="sea" title="*Double Click to close the search box*"><i class="fas fa-search"></i></h4>
+        <input type="text" class="search-here" id="sear-box" placeholder="Search here">
+        <div class="card-body">
+            <h5 class="title">Add items</h2>
+                <form id="addForm" class="form-inline mb-3">
+                    <input type="text" class="form-control  mr-2" id="item" placeholder="Eg: Go to market"
+                        style="font-family: cursive;">
+                    <input type="submit" class="btn btn-dark but-sub mt-2" value="Add" id="submit-but">
+                </form>
+
+
+                <div class="items">
+                    <ul class="list-group" id="list-items">
+
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

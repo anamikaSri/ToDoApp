@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: 16px;
+    background: rgb(208,35,237);
+background: linear-gradient(90deg, rgba(208,35,237,0.9220063025210083) 0%, rgba(0,212,255,1) 99%, rgba(29,235,240,1) 100%);
+}
+
+.box
+{
+    margin: auto;
+    margin-top: 5vh;
+    position: relative;
+    width: 20rem;
+    transition: 1s;
+    animation:wobble;
+     /* referring directly to the animation's @keyframe declaration */
+     box-shadow: 5px 5px 4px 4px #0e0d0d;
+    animation-duration: 2s ;
+    background: rgba(250, 248, 248, 0.1);
+}
+
+
+.heading
+{
+    font-size: 35px;
+    position: absolute;
+    top: 140px;
+    color: rgb(12, 2, 2);
+}
+
+.sub-but
+{
+    font-size: 80%;
+}
+
+.refreash
+{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    transition: 1s;
+}
+
+.refreash:hover
+{
+    animation-name:rotateIn;
+    animation-duration: 1.5s;
+}
+.search
+{
+    position: absolute;
+    top: 2px;
+    right: 40px;
+    color: white;
+ 
+}
+.search-here
+{
+    position: absolute;
+    top: 2px;
+    right: 66px;
+    color: white;
+    border: none;
+    background: transparent;
+    border-bottom: 4px solid black;
+    width: 0px;
+    opacity: 0;
+   
+}
+
+.search-here-2
+{
+    animation: open forwards 2s;
+}
+
+@keyframes open {
+
+    from
+    {
+        opacity: 1;
+        width: 0px;
+    }
+    
+    to{
+        opacity: 1;
+        width: 150px;
+    }
+}
+
+.list-group
+{
+    list-style-type: disc !important; 
+}
+
+
+.head
+{
+    font-size: 40px;
+    background: transparent;
+    font-weight: bold;
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+    color: yellow !important;
+}
+.logo
+{
+    margin: auto;
+    color: yellow;
+    animation-duration: 2s;
+    font-size: 50px;
+}
+
